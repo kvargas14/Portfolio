@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsugikuni Brothers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="(1)Flex.html">Home</a>
+        <a href="(2)Flame.html">Flame</a>
+        <a href="(3)Tsugikuni.html">Tsugikuni</a>
+        <a href="(4)Arm.html">Arm</a>
+        <a href="(5)Rengoku.html">Rengoku</a>
+        <a href="(6)Team.html">Team</a>
+        <a href="(7)Demon Eye.html">Shoulder</a>
+    </div>
+    <div class="container">
+        <h1>Tsugikuni Brothers</h1>
+    <div class="image-container">
+    <div class="image"><image src="photo/2.jpg" alt=""></image></div>
+</div> 
+<h2>Image 2</h2>
+<div class="popup-image">
+    <span>&times;</span>
+    <img src="photo/2.jpg" alt="">
+</div>
+<script>
+document.querySelectorAll('.image-container img').forEach(image =>{
+    image.onclick = () =>{
+    document.querySelector('.popup-image').style.display = 'block';
+    document.querySelector('.popup-image img').src = image.getAttribute('src');
+    }
+});
+document.querySelector('.popup-image span').onclick = () =>{
+document.querySelector('.popup-image').style.display = 'none';  
+}
+</script>
+</body>
+</html>
